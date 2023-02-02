@@ -1,0 +1,47 @@
+body{
+  background-color: black;
+  font-family: Times New Roman;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text{
+  color: white;
+  margin-bottom: 25px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.loading{
+  width: 100%;
+  display: flex;
+  height: auto ;
+  justify-content: center;
+  align-items: center;
+}
+.loading .line-box{
+  padding: 2px;
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid White;
+}
+.loading .line-box .line{
+  height: 40px;
+  border-radius: 20px ;
+  background: gold;
+  animation: loading 5s forwards cubic-bezier(0,0,0,0);
+}
+@keyframes loading{
+  0%{
+    width: 0%
+  }
+  100%{
+    width: 100%
+  }
+  }
+  
